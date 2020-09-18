@@ -124,7 +124,7 @@ Status TablePlugin::HandleRequest(const RoutingAlgorithmsInterface &algorithms,
                                   source.location, destination.location);
 
                     result_tables_pair.first[table_index] =
-                        distance_estimate / (double)params.fallback_speed;
+                        distance_estimate;
                     if (!result_tables_pair.second.empty())
                     {
                         result_tables_pair.second[table_index] = distance_estimate;
